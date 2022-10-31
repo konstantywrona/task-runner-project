@@ -1,0 +1,45 @@
+/* Variables */
+
+/* Global */
+
+body {
+    margin: 0;
+}
+
+/* Navigation */
+
+.navigation {
+    position: absolute;
+    left: 50%;
+    top: 10%;
+    transform: translate(-50%, -50%);
+}
+.navbar-brand, .navbar-content {
+    text-align: center;
+}
+
+/* Header */
+
+.splash img {
+    height: 100vh;
+    width: 100%;
+    object-fit: cover;
+    display: block;
+    filter: brightness(50%);
+}
+
+.splash-inner {
+        position: absolute;
+        width: 100%;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        right: auto;
+        bottom: auto;
+        text-align: center;
+        color: white;
+        text-transform: uppercase;
+        h1 {
+            margin-bottom: 30px;
+        }
+}
