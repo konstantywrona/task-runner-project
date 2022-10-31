@@ -1,19 +1,71 @@
 /* Variables */
 /* Global */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
+  font-family: "Heebo", sans-serif;
+  line-height: 1.7;
+}
+
+.btn {
+  display: inline-block;
+  min-width: 250px;
+  margin: 0 auto;
+  padding: 16px;
+  border-radius: 5px;
+  font-family: "Heebo", sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  border: 2px solid #f1c40f;
+  background-color: #f1c40f;
+  color: #ffffff;
+}
+.btn a:hover {
+  opacity: 0.8;
 }
 
 /* Navigation */
 .navigation {
   position: absolute;
+  width: 100%;
   left: 50%;
-  top: 10%;
+  top: 15%;
   transform: translate(-50%, -50%);
+  z-index: 1;
+}
+.navigation ul {
+  list-style-type: none;
+}
+.navigation li {
+  display: inline-block;
+  margin-right: 50px;
+}
+.navigation a {
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: 400;
+}
+.navigation a:hover {
+  color: #f1c40f;
 }
 
-.navbar-brand, .navbar-content {
-  text-align: center;
+.navbar-brand a {
+  text-decoration: none;
+  font-family: "Great Vibes", cursive;
+  font-size: 2.5rem;
+  color: #f1c40f;
+}
+
+.navbar-content a {
+  text-decoration: none;
+  color: #7f8c8d;
 }
 
 /* Header */
@@ -23,7 +75,7 @@ body {
   -o-object-fit: cover;
      object-fit: cover;
   display: block;
-  filter: brightness(50%);
+  filter: brightness(40%);
 }
 
 .splash-inner {
@@ -32,12 +84,18 @@ body {
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-  right: auto;
-  bottom: auto;
   text-align: center;
-  color: white;
-  text-transform: uppercase;
 }
 .splash-inner h1 {
-  margin-bottom: 30px;
+  text-transform: uppercase;
+  color: #ffffff;
+  font-size: 6rem;
+  margin: 0;
+}
+.splash-inner h4 {
+  font-family: "Source Serif Pro", serif;
+  color: #ffffff;
+  font-size: 2.25rem;
+  margin: 0;
+  font-weight: 300;
 }/*# sourceMappingURL=style.css.map */
