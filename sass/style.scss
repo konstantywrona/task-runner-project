@@ -86,15 +86,17 @@ p {
     }
 }
 .navbar-brand {
-    
+    text-align: center;
     a {
         text-decoration: none;
         font-family: $font-brand;
-        font-size: 2.5rem;
+        font-size: 3rem;
         color: $color-two;
         }
 }
 .navbar-content {
+    text-align: center;
+    margin: auto;
     a {
         text-decoration: none;
         color: $color-one;
@@ -156,8 +158,8 @@ p {
     text-align: center;
     background: #ecf0f1;
     img {
-        width: 350px;
-        height: 350px;
+        width: 300px;
+        height: 300px;
         object-fit: cover;
         display: block;
     }
@@ -166,12 +168,13 @@ p {
     }
 }
 .card {
-    max-width: 350px;
-    margin-bottom: 40px;
+    max-width: 300px;
+    margin: 0 auto 40px auto;
 }
 .card-body {
     background: $color-text-one;
     padding: 15px;
+    width: 300px;
 }
 
 /* Page-footer */
@@ -180,6 +183,7 @@ p {
     padding: 48px 0;
     margin: 0 auto;
     width: 100%;
+    display: inline-block;
     ul {
         margin: 0 auto;
         padding: 0;
@@ -208,11 +212,63 @@ p {
     }
 }
 .copyright {
-    position: absolute;
-    width: 100%;
+    text-align: center;
     h2 {
         color: $color-one;
         font-size: 14px;
-        margin-left: 20%;
+        margin: 10px auto;
+    }
+}
+
+// /* Media */
+
+@media (max-width: 767px) {
+    section {
+        padding: 0;
+    }
+    .navbar-brand {
+        padding: 20px;
+    }
+    .navbar-content {
+        width: 100%;
+    }
+    .navigation {
+        ul {
+            padding: 0;
+            font-size: 14px;
+        }
+        li {
+            margin-right: 5px;
+        }
+    }
+    .services-box {
+        margin-bottom: 50px;
+    }
+    .splash-inner {
+        h1 {
+            font-size: 2rem;
+        }
+        h4 {
+            font-size: 1.25rem;
+        }
+    }
+}
+@media (min-width: 767px) {
+    .copyright {
+        position: absolute;
+        right: 30%;
+    }
+}
+@media (min-width: 767px) and (max-width: 991px) {
+    .services-box {
+        margin-bottom: 50px;
+    }
+    .splash-inner {
+        h1 {
+            font-size: 3rem;
+        }
+        h4 {
+            font-size: 2rem;
+        }
     }
 }
