@@ -81,13 +81,20 @@ p {
   color: #f1c40f;
 }
 
+.navbar-brand {
+  text-align: center;
+}
 .navbar-brand a {
   text-decoration: none;
   font-family: "Great Vibes", cursive;
-  font-size: 2.5rem;
+  font-size: 3rem;
   color: #f1c40f;
 }
 
+.navbar-content {
+  text-align: center;
+  margin: auto;
+}
 .navbar-content a {
   text-decoration: none;
   color: #7f8c8d;
@@ -159,12 +166,13 @@ p {
 
 .card {
   max-width: 300px;
-  margin-bottom: 40px;
+  margin: 0 auto 40px auto;
 }
 
 .card-body {
   background: #ffffff;
   padding: 15px;
+  width: 300px;
 }
 
 /* Page-footer */
@@ -172,6 +180,7 @@ p {
   padding: 48px 0;
   margin: 0 auto;
   width: 100%;
+  display: inline-block;
 }
 .page-footer ul {
   margin: 0 auto;
@@ -201,24 +210,55 @@ p {
 }
 
 .copyright {
-  position: absolute;
-  width: 100%;
+  text-align: center;
 }
 .copyright h2 {
   color: #7f8c8d;
   font-size: 14px;
-  margin-left: 20%;
+  margin: 10px auto;
 }
 
-/* Media */
 @media (max-width: 767px) {
   section {
     padding: 0;
   }
+  .navbar-brand {
+    padding: 20px;
+  }
+  .navbar-content {
+    width: 100%;
+  }
+  .navigation ul {
+    padding: 0;
+    font-size: 14px;
+  }
+  .navigation li {
+    margin-right: 5px;
+  }
   .services-box {
     margin-bottom: 50px;
   }
+  .splash-inner h1 {
+    font-size: 2rem;
+  }
+  .splash-inner h4 {
+    font-size: 1.25rem;
+  }
+}
+@media (min-width: 767px) {
   .copyright {
-    position: relative;
+    position: absolute;
+    right: 30%;
+  }
+}
+@media (min-width: 767px) and (max-width: 991px) {
+  .services-box {
+    margin-bottom: 50px;
+  }
+  .splash-inner h1 {
+    font-size: 3rem;
+  }
+  .splash-inner h4 {
+    font-size: 2rem;
   }
 }/*# sourceMappingURL=style.css.map */
