@@ -156,8 +156,8 @@ p {
     text-align: center;
     background: #ecf0f1;
     img {
-        width: 350px;
-        height: 350px;
+        width: 300px;
+        height: 300px;
         object-fit: cover;
         display: block;
     }
@@ -166,7 +166,7 @@ p {
     }
 }
 .card {
-    max-width: 350px;
+    max-width: 300px;
     margin-bottom: 40px;
 }
 .card-body {
@@ -214,5 +214,19 @@ p {
         color: $color-one;
         font-size: 14px;
         margin-left: 20%;
+    }
+}
+
+/* Media */
+
+@media (max-width: 767px) {
+    section {
+        padding: 0;
+    }
+    .services-box {
+        margin-bottom: 50px;
+    }
+    .copyright {
+        position: relative;
     }
 }
